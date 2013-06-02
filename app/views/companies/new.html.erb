@@ -1,0 +1,31 @@
+<h1>New Company</h1>
+
+
+<%= form_tag(companies_url, method: 'post') do %>
+
+
+  <div>
+    <%= label_tag :company_name %><br />
+    <%= text_field_tag :company_name %>
+  </div>
+
+    <div>
+    <%= label_tag :company_email %><br />
+    <%= text_field_tag :company_email %>
+  </div>
+
+    <div>
+    <%= label_tag :user_id %><br />
+    <%= number_field_tag :user_id %>
+  </div>
+
+    <div>
+    <%= label_tag :event_id %><br />
+    <%= number_field_tag :event_id %>
+  </div>
+
+  
+  <div>
+    <%= submit_tag "Create Company" %>
+  </div>
+<% end %>

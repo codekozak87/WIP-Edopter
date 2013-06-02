@@ -1,0 +1,36 @@
+<h1>Editing Event #<%= @event.id %></h1>
+
+
+<%= form_tag(event_url(@event), method: 'put') do %>
+
+  <div>
+    <%= label_tag :user_id %><br />
+    <%= number_field_tag :user_id, @event.user_id %>
+  </div>
+
+  <div>
+    <%= label_tag :company_id %><br />
+    <%= number_field_tag :company_id, @event.company_id %>
+  </div>
+
+  <div>
+    <%= label_tag :event_name %><br />
+    <%= text_field_tag :event_name, @event.event_name %>
+  </div>
+
+  <div>
+    <%= label_tag :event_date %><br />
+    <%= date_select_tag :event_date, @event.event_date %>
+  </div>
+
+  <div>
+    <%= label_tag :event_description %><br />
+    <%= text_area_tag :event_description, @event.event_description %>
+  </div>
+
+  
+  <div>
+    <%= submit_tag "Update Event" %>
+  </div>
+
+<% end %>
