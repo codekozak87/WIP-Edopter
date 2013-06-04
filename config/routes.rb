@@ -72,11 +72,4 @@ get "/dummy", controller: "prepwork", action: "show"
 
 
 
-
-
-
-
-
-
-  
 end

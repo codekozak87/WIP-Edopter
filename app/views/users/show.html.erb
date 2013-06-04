@@ -1,13 +1,27 @@
 <h1>User #<%= @user.id %></h1>
 
+ <div>
+    <%= hidden_field_tag @username %>
+  </div>
+
 <p>
-  <b>Username:</b>
-  <%= @user.username %>
+  <b>Name:</b>
+  <%= @user.name %>
 </p>
 
 <p>
-  <b>Password:</b>
-  <%= @user.password %>
+  <b>Email:</b>
+  <%= @user.email %>
+</p>
+
+<p>
+  <b>About Me</b>
+  <%= @user.about_me %>
+</p>
+
+<p>
+  <b>Interests</b>
+  <%= @user.interests %>
 </p>
 
 

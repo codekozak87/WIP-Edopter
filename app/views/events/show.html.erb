@@ -1,8 +1,8 @@
 <h1>Event #<%= @event.id %></h1>
 
 <p>
-  <b>User:</b>
-  <%= @event.user_id %>
+  <b>Users:</b>
+  <%= @event.user_id.try.all %>
 </p>
 
 <p>
