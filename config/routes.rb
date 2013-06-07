@@ -1,4 +1,20 @@
 Edopter::Application.routes.draw do
+  #  Edopter Super Landing Page
+
+  get "/edopter", controller: "landing_page", action: "show", as: "home"
+
+  #  Edopter Super Mockup/Prepwork
+  get "/dummy", controller: "landing_page", action: "prepwork"
+
+  # Sessions
+
+  get "/session/new" => "sessions#new", as: "new_session"
+
+  post "/sessions" => "sessions#create", as: "sessions"
+
+  delete "/sessions" => "sessions#destroy"
+
+
   # Routes for the Event resource:
   # CREATE
   get '/events/new', controller: 'events', action: 'new', as: 'new_event'
@@ -60,16 +76,4 @@ Edopter::Application.routes.draw do
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
-
-
-#Edopter Super Landing Page
-
-get "/edopter", controller: "landing_page", action: "show"
-
-
-#Edopter Super Mockup/Prepwork
-get "/dummy", controller: "prepwork", action: "show"
-
-
-
 end

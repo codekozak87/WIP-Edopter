@@ -1,72 +1,132 @@
-<h1> Howdy </h1>
-
-<head>
+<!doctype html>
+<html>
+	<head>
 		<meta charset="UTF-8">
 		<title>Edopter</title>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.c
+		ss">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<nav>
-			<ul>
-				<li><a href="#">Main</a></li>
-				<li><a href="#">Edopters</a></li>
-				<li><a href="#">Meetups</a></li>
-				<li><a href="#">Startups</a></li>
-			</ul>
-
-
+		<nav class="clearfix">
+			<h1 class="">edopter</h1>
+			
 		</nav>
-		<div class="row-fluid">
-	  		<div class="span6" "main_header">...
-	  			<h1>Connecting Startups and Early Adopters</h1>
+		<div class="row-fluid panel-back-1">
+	  		<div class="span6 main_header">
+	  			<h2>Connecting startups <br> and early adopters</h2>
 	  		</div>
-	  		<div class="span4 offset4">
-	  			<button class="btn btn-large btn-block btn-primary" type="button">let's go!</button>
-	  		</div>
+	  
 		</div>
-
-
-		<div class="container">
+		<div class="panel-back-2 edopt">
+			<div class="container push_contain">
+		    	<div class="row-fluid">
+			  		<div class="span6 spacing">
+			  			<h2 class="sub_header">Edopters</h2>
+			  			<h3>Early access, focused feedback.</h3>
+			  			<p>Edopter means early adopter. Our mission is to provide immense value to those of you who like to try things early. Anyone eager enough to try something out before it's cool, is cool.</p>
+			  		</div>
+			  		<div class="span7">
+			  			 <%= link_to "Let's Connect", users_url, class: "btn btn-large btn-block btn-primary site_button"  %>
+		  			</div>
+				</div>
+		  	</div>
+		  </div>
+	  	<div class="container panel-back-3 edopt push_contain">
 	    	<div class="row-fluid">
-		  		<div class="span6">...
-		  			<p class="lead">Edopters</p>
-		  			<p>Early access, focused feeback.</p>
-		  			<p>Edopter means early adopter. Our mission is to provide immense value to those of you who like to try things early. Anyone eager enough to try something out before it's cool, is cool.</p>
+		  		<div class="span6 spacing">
+		  			<h2 class="sub_header_light">Events</h2>
+		  			<h3 class="color_header">Where users and builders unite.</h3>
+		  			<p class="color_switch">So where are these products? Well, we bring the starups out of their garages into a place to mix and mingle then test. We encourage you to play with the product and see what you think.</p>
 		  		</div>
+		  		<div class="span7">
+		  				  			 
+		  		<%= link_to "Let's Learn", events_url, class: "btn btn-large btn-block btn-primary site_button"  %>
 
-
-
-		  		<div class="span4 offset4">
-		  			<button class="btn btn-large btn-block btn-primary" type="button">let's connect</button>
-		  			<p><a href="#">join a meetup</a></p>
 	  			</div>
+	  			
 			</div>
 	  	</div>
-	  	<div class="container">
+	  	<div class="container panel-back-4 edopt push_contain">
 	    	<div class="row-fluid">
-		  		<div class="span6">...
-		  			<p class="lead">Meetups</p>
-		  			<p>Where users and builders unite.</p>
-		  			<p>So where are these products? Well, we bring the starups out of their garages into a place to mix and mingle then test. We encourage you to play with the product and see what you think.</p>
+		  		<div class="span6 spacing">
+		  			<h2 class="sub_header">Startups</h2>
+		  			<h3>Accelerating the feedback loop.</h3>
+		  			<p>Build. Measure. Learn. We have been encouraged to get out of the building. But where? And to whom? At Edopter, we help to advacne the feedback loop by bringing in users and potential users to play with your product and get a real-time analysis of what you have built. </p>
 		  		</div>
-		  		<div class="span4 offset4">
-		  			<button class="btn btn-large btn-block btn-primary" type="button">let's learn</button>
+		  		<br>
+		  		<div class="span7">
+		  			<%= link_to "Let's Test", events_url, class: "btn btn-large btn-block btn-primary site_button"  %>
+
+		  			<p class="create_event"><a href="#">Create an Event</a></p>
 	  			</div>
-	  			<p><a href="#">join a meetup</a></p>
+	  			-
 			</div>
 	  	</div>
-	  	<div class="container">
-	    	<div class="row-fluid">
-		  		<div class="span6">...
-		  			<p class="lead">Startups</p>
-		  			<p>Advancing the feedback loop.</p>
-		  			<p>Build. Measure.Learn. We have been encouraged to get out of the building. But where? And to whom? At Edopter, we help to advacne the feedback loop by bringing in users and potential users to play with your product and get a real-time analysis of what you have built. </p>
-		  		</div>
-		  		<div class="span4 offset4">
-		  			<button class="btn btn-large btn-block btn-primary" type="button">let's test</button>
-		  			<p><a href="#">join a meetup</a></p>
-	  			</div>
-			</div>
-	  	</div>
+	  	<div>
+	  		<h1>Our Team</h1>
+	  		<ul id="team_layout">
+	  			<li>
+	  				<img src="./img/kevin-lee.jpg">
+	  				<h4>Kevin Lee</h4>
+	  				<p>User Experience</p>
+	  				<a href="https://twitter.com/kleeee23">
+	  					<img src="./img/TwitterHover.png">
+	  				</a>
+	  				<a href="http://www.linkedin.com/profile/view?id=126517788&locale=en_US&trk=tyah">
+	  					<img src="./img/LinkedInHover.png">
+	  				</a>
+	  			</li>
+	  			<li>
+	  				<img src="./img/megan-mcsherry.jpg">
+	  				<h4>Megan McSherry</h4>
+	  				<p>Visual Design</p>
+	  				<a href="https://twitter.com/meganmcsherry">
+	  					<img src="./img/TwitterHover.png">
+	  				</a>
+	  				<a href="http://www.linkedin.com/profile/view?id=218456114&authType=NAME_SEARCH&authToken=TnmE&locale=en_US&srchid=710529121370396269365&srchindex=1&srchtotal=6&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A710529121370396269365%2CVSRPtargetId%3A218456114%2CVSRPcmpt%3Aprimary">
+	  					<img src="./img/LinkedInHover.png">
+	  				</a>
+	  			</li>
+	  			<li>
+	  				<img src="./img/mike-adeleke.jpg">
+	  				<h4>Mike Adeleke</h4>
+	  				<p>Front End</p>
+	  				<a href="https://twitter.com/mikeadeleke">
+	  					<img src="./img/TwitterHover.png">
+	  				</a>
+	  				<a href="http://www.linkedin.com/profile/view?id=71052912&authType=NAME_SEARCH&authToken=rFRI&locale=en_US&srchid=710529121370396345557&srchindex=1&srchtotal=23&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A710529121370396345557%2CVSRPtargetId%3A71052912%2CVSRPcmpt%3Aprimary">
+	  					<img src="./img/LinkedInHover.png">
+	  				</a>
+	  			</li>
+	  			<li>
+	  				<img src="./img/0d7aaaf.jpg">
+	  				<h4>Wade Niday</h4>
+	  				<p>User Experience &amp; Visual Design</p>
+	  				<a href="https://twitter.com/NidayLikeFriday">
+	  					<img src="./img/TwitterHover.png">
+	  				</a>
+	  				<a href="http://www.linkedin.com/profile/view?id=24145713&authType=NAME_SEARCH&authToken=_opm&locale=en_US&srchid=710529121370396186681&srchindex=1&srchtotal=1&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A710529121370396186681%2CVSRPtargetId%3A24145713%2CVSRPcmpt%3Aprimary">
+	  					<img src="./img/LinkedInHover.png">
+	  				</a>
+	  			</li>
+	  			<li>
+	  				<img src="./img/trooper.jpg">
+	  				<h4>Yurij Bryndzia</h4>
+	  				<p>Web Development</p>
+	  				<a href="https://twitter.com/RookieInnovator">
+	  					<img src="./img/TwitterHover.png">
+	  				</a>
+	  				<a href="http://www.linkedin.com/profile/view?id=54078100&authType=NAME_SEARCH&authToken=E6zf&locale=en_US&srchid=710529121370396159165&srchindex=1&srchtotal=1&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A710529121370396159165%2CVSRPtargetId%3A54078100%2CVSRPcmpt%3Aprimary">
+	  					<img src="./img/LinkedInHover.png">
+	  				</a>
+	  			</li>
+	  		</ul>
+	  		<a href="mailto:mike@edopter.co">
+	  			<button class="btn btn-large btn-block btn-primary site_button contact_button" type="button">Contact Us</button>
+	  		</a>	
+		</div>
 	</body>
+</html>

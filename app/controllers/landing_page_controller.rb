@@ -6,6 +6,9 @@ class LandingPageController < ApplicationController
 	
 	end
 
+	def prepwork
+		
+	end
 
 
 end
