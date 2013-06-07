@@ -1,0 +1,226 @@
+/*Begin Home Page */
+	.main_header h2 {
+		line-height: 100px;
+		font-size: 80px;
+		color: white;
+		font-weight: lighter;
+		font-family: 'Source Sans Pro light 200', sans-serif;
+		margin-top: 200px;
+	}
+	.main_header button {
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+
+	.sub_header {
+		font-size: 72px;
+		margin-bottom: 30px;
+		color: white;
+	}
+	.sub_header_light {
+		font-size: 72px;
+		margin-bottom: 30px;
+		color:  #808080;
+	}
+
+	p {
+		color: white;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 22px;
+		line-height: 1.2em;
+	}
+
+	li p {
+		color: #808080;
+		font-size: 16px;
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+	h4 {
+		font-size: 22px;
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+
+	.color_switch {
+		color:  #808080;
+	}
+
+	.color_header {
+		color:  #808080;
+	}
+
+	h3 {
+		color: white;
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+
+	.panel-back-1 {
+    background-image:url('/assets/Photo1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+
+    .panel-back-2 {
+    background-image:url('/assets/8.31.10-early-sunrise-3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+
+    .panel-back-3 {
+    background-image:url('/assets/powerbook-g4-17.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 520px 0;
+    }
+
+    .panel-back-4 {
+    background-image:url('/assets/debut_dark.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+
+	.site_button {
+		width: 350px;
+		margin-top: 10px;
+		line-height: 1.2em;
+	}
+
+	.edopt {
+		width: 100%;
+		height: 650px;
+		margin: 10px 0;
+	}
+
+	.spacing {
+		margin-top: 200px;
+	}
+
+	.clearfix {
+		margin-bottom: -15px;
+	}
+
+	.button {
+		font-size: 20px;
+		text-transform: uppercase;
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+
+	.join_meetup {
+		font-size: 22px;
+		text-transform: uppercase;
+		font-family: 'Source Sans Pro Light 200', sans-serif;
+		margin: 10px 0;
+		color: #6cdba6;
+	}
+
+	.team_layout {
+
+	}
+
+	.twitter_icon {
+		background-size: cover;
+		background-image: url("/assets/TwitterStatic.png");
+	}
+
+	.linkedin_icon {
+		background-size: cover;
+		background-image: url("/assets/LinkedInStatic.png");
+	}
+
+	.contact_team {
+		margin-left: 50px;
+		margin-top: 100px;
+	}
+	
+
+
+/*End Home Page */
+
+/*Begin Sign up Log In*/
+
+	/*Begin Left*/
+
+	.signin_left {
+
+	}
+
+	#team_layout li {
+		float: left;
+		list-style: none;
+		padding: 0 10px;
+		margin: 40px 0;
+	}
+
+	ul {
+
+	}
+
+	img {
+		border-radius: 50%;
+	}
+
+	a img {
+		-webkit-filter: grayscale(100%);
+		border-radius: 0%;
+	}
+
+	a img:hover {
+		-webkit-filter: grayscale(0%);
+		border-radius: 0%;
+	}
+
+	.contact_button {
+		margin: 0 auto;
+		margin-bottom: 150px;
+	}
+
+	nav h1 {
+		color: #6cdba6;
+		font-size: 30px;
+		font-size: Source Sans Pro light;
+		margin-bottom: -37px;
+		margin-left: 30px;
+	}
+
+
+
+	/*End Left Side*/
+
+	/*Begin Right Side*/
+
+
+
+
+
+	/*End Right Side*/
+
+
+
+
+/*End Sign Up Log In*/
+
+/*Begin Sprofile Page*/
+	.profile {
+		width: 450px;
+		height: 300px;
+		border: 1px solid black;
+		margin-top: 50px;
+	}
+
+	.profile_name {
+		text-align: center;
+	}
+
+/*End Sprofile Page*/
+
+ /*Begin In General*/
+
+	 select {
+	 	margin: 20px;
+	 }
+
+
+
+
+ /*End In General*/
