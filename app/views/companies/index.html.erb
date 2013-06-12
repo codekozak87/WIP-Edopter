@@ -1,13 +1,12 @@
 <h1>Startups</h1>
 
-<p><%= link_to 'Add a Startup', new_company_url %></p>
+<p><%= link_to 'Begin Connecting Today!', new_company_url %></p>
 
 <table>
   <thead>
     <tr>
       <th>Startup name</th>
       <th>Company email</th>
-      <th>User</th>
       <th>Events</th>
       <th></th>
       <th></th>
@@ -20,8 +19,6 @@
     <tr>
       <td><%= company.company_name %></td>
       <td><%= company.company_email %></td>
-      <td><%= company.user_id %></td>
-      <td><%= company.event_id %></td>
   
       <td><%= link_to 'Show', company_url(company) %></td>
       <td><%= link_to 'Edit', edit_company_url(company) %></td>

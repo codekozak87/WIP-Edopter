@@ -1,4 +1,4 @@
-<h1>Company #<%= @company.id %></h1>
+<h1>#<%= @company.name %></h1>
 
 <p>
   <b>Company name:</b>
@@ -20,4 +20,41 @@
   <%= @company.event_id %>
 </p>
 
-
+<head>
+		<meta charset="UTF-8">
+		<title>Create Startup Profile</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body>
+		
+		<div class="container span5 offset4 profile">
+			<p>
+				<img src="#">
+				<!-- <img src=""> -->
+			</p>
+			<h2 class="profile_name">
+				Startup Name
+				<!-- We need to add real text -->
+			</h2>
+			<p class="profile_name">
+				<a href="#">
+					Edit profile
+					<!-- Edit profile link on side -->
+				</a>
+			</p>
+		</div>
+		
+		<div class="container span5 offset4">
+			<h3>Contact</h3>
+			<p class=><a href="#">Email Address</a></p>
+			<p><a href="#">Social media link</a></p>
+			<h3>About the Startup</h3>
+			<p>
+				Industry
+				<!-- Industry -->
+			</p>
+			<textarea></textarea>
+		</div>
+	</body>

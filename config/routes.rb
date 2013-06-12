@@ -1,10 +1,21 @@
 Edopter::Application.routes.draw do
-  #  Edopter Super Landing Page
-
-  get "/edopter", controller: "landing_page", action: "show", as: "home"
-
   #  Edopter Super Mockup/Prepwork
   get "/dummy", controller: "landing_page", action: "prepwork"
+
+  #  Edopter Super Landing Page
+  root :to => "landing_page#show"
+
+  get "/edopter", controller: "landing_page", action: "show", as: "home"
+  get "/edopter/getstarted", controller: "landing_page", action: "sign_up", as: "start"
+
+
+  #  Other Edopter Routes
+
+  get "edopter/signup", controller: "edopter", action: "signup", as: "sign_up"
+
+  get "/edopter/signup/startup", controller: "edopter", action: "s_signup", as: "startup_signup"
+
+  get "/edopter/signup/user", controller: "edopter", action: "u_signup", as: "user_signup"
 
   # Sessions
 
