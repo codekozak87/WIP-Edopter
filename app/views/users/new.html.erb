@@ -1,4 +1,4 @@
-<h1>New User</h1>
+<h1> New Edopter </h1>
 
 
 <%= form_tag(users_url, method: 'post') do %>
@@ -10,29 +10,29 @@
     <%= text_field_tag :username %>
   </div>
 
-  <div>
+
+    <div>
+    <%= label_tag :password %><br />
+    <%= password_field_tag :password %>
+  </div>
+
+<div class="nav nav-pills pull-middle">
     <%= label_tag :name %><br />
     <%= text_field_tag :name %>
   </div>
 
-    <div>
-    <%= label_tag :password %><br />
-    <%= text_field_tag :password %>
-  </div>
-
-
   <div>
-    <%= label_tag :email %><br />
-    <%= text_field_tag :email %>
+    <%= label_tag :interests %><br />
+    <%= text_field_tag :interests %>
   </div>
 
    <div>
-    <%= label_tag :password %><br />
-    <%= text_field_tag :password %>
+    <%= label_tag :about_me %><br />
+    <%= text_area_tag :about_me %>
   </div>
 
 
   <div>
-    <%= submit_tag "Create User" %>
+    <%= submit_tag "Start Edopting!" %>
   </div>
 <% end %>

@@ -19,7 +19,11 @@ Edopter::Application.routes.draw do
 
   # Sessions
 
-  get "/session/new" => "sessions#new", as: "new_session"
+  get "/session/new" => "sessions#log_in", as: "login_nav"
+    
+  get "/session/new/edopter" =>  "sessions#new_UsersSession", as: "user_login"
+  
+  get "/session/new/company" => "sessions#new_StartupsSession", as: "startup_login"
 
   post "/sessions" => "sessions#create", as: "sessions"
 
@@ -44,6 +48,11 @@ Edopter::Application.routes.draw do
   #------------------------------
 
   # Routes for the Company resource:
+
+
+
+
+
   # CREATE
   get '/companies/new', controller: 'companies', action: 'new', as: 'new_company'
   post '/companies', controller: 'companies', action: 'create'

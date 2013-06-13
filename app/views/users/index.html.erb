@@ -1,12 +1,12 @@
-<h1>Users</h1>
+<h1>Edopters</h1>
 
 <p><%= link_to 'Add a New User', new_user_url %></p>
 
 <table>
   <thead>
     <tr>
+      <th>Edopters</th>
       <th>Interests</th>
-      <th>No. of Users</th>
       <th></th>
       <th></th>
       <th></th>
@@ -17,10 +17,9 @@
   <% @users.each do |user| %>
     <tr>
       <td><%= user.username %></td>
-      <td><%= user.password %></td>
-      <td><%= user.password %></td>
-      <td><%= user.password %></td>
-      <td><%= user.password %></td>
+      <td><%= user.interests %></td>
+      <td><%= user.interests %></td>
+      <td><%= user.interests %></td>
   
       <td><%= link_to 'Show', user_url(user) %></td>
       <td><%= link_to 'Edit', edit_user_url(user) %></td>

@@ -18,11 +18,12 @@ class CompaniesController < ApplicationController
     @company.company_email = params[:company_email]
     @company.user_id = params[:user_id]
     @company.event_id = params[:event_id]
-    
-    if @company.save
-            redirect_to companies_url
-          else
-      render 'new'
+ 
+
+   if @company.save
+      redirect_to company_url, :notice => "Startup Account Creation Success!"
+    else
+      redirect_to new_user_url, :notice => "Try again."
     end
   end
 

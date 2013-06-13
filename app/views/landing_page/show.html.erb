@@ -1,5 +1,4 @@
-<!doctype html>
-<html>
+<html>	
 	<head>
 		<meta charset="UTF-8">
 		<title>Edopter</title>
@@ -11,12 +10,13 @@
 	<body>
 		<nav class="clearfix">
 		<h1>edopter</h1>
-		</nav>
+	</nav>
 		<div class="row-fluid panel-back-1 edopt">
 	  		<div class="span8 offset1 main_header">
 	  			<h2>Connecting startups <br> and early adopters</h2>
-	  			<button class="btn btn-large btn-block btn-primary site_button" type="button">let's go!</button>
-	  			<p class="join_meetup"><a href="#">join a meetup</a></p>
+	  			  <%= link_to "let's go", start_url, class: "btn btn-large btn-block btn-primary site_button"   %>
+
+		  				<p><%= link_to "join a meetup", events_url %></p>
 	  		</div>
 		</div>
 		<div class="panel-back-2 edopt">
@@ -26,8 +26,8 @@
 			  			<h2 class="sub_header">see what's new</h2>
 			  			<h3>early access to the 'new thing'.</h3>
 			  			<p>Edopter - early adopters - like to try things first. Our mission is to connect you with emerging companies, becasue trying something out before it's cool...is cool.</p>
-			  			<button class="btn btn-large btn-block btn-primary site_button" type="button">let's connect</button>
-			  			<p class="join_meetup"><a href="#">join a meetup</a></p>
+			  			<p><%= link_to "let's connect", users_url, class: "btn btn-large btn-block btn-primary site_button"  %></p>
+		  				<p><%= link_to "join a meetup", events_url %></p>
 		  			</div>
 				</div>
 		  	</div>
@@ -39,8 +39,8 @@
 			  			<h2 class="sub_header_light">meet face-to-face</h2>
 			  			<h3 class="color_header">connecting users and builders.</h3>
 			  			<p class="color_switch">Where are these emerging companies? We bring the startups into the community so you can tinker and test the latest technolgoes before anyone else.</p>
-			  			<button class="btn btn-large btn-block btn-primary site_button" type="button">see who's next</button>
-			  			<p class="join_meetup"><a href="#">join a meetup</a></p>
+			  			<p><%= link_to "see who's next", events_url, class: "btn btn-large btn-block btn-primary site_button"  %></p>
+		  				<p><%= link_to "join a meetup", events_url %></p>
 		  			</div>
 	  			</div>
 			</div>
@@ -52,8 +52,9 @@
 			  			<h2 class="sub_header">get helpful feedback</h2>
 			  			<h3>accelerating focused feedback.</h3>
 			  			<p>Build. Measure. Learn. We help advance the feedback loop by directing users to your product for a real-time analysis.</p>
-			  			<button class="btn btn-large btn-block btn-primary site_button" type="button">let's test</button>
-			  			<p class="join_meetup"><a href="#">join a meetup</a></p>
+			  			
+			  			<p><%= link_to "let's test", new_company_url, class: "btn btn-large btn-block btn-primary site_button"  %></p>
+		  				<p><%= link_to "join a meetup", events_url %></p>
 		  			</div>
 				</div>
 			</div>

@@ -1,0 +1,26 @@
+<h1>Edopter Sign In</h1>
+
+
+<%= form_tag sessions_url do%>
+
+
+	<div>
+
+		<%= label_tag :username, "Edopter" %> <br />
+	<p> <%= text_field_tag :username, nil, placeholder: "Enter your username here" %> </p>
+	</div>
+
+	<div>
+
+		<%= label_tag :password%> <br />
+	<p> <%= password_field_tag :password, nil, placeholder: "Enter your password here" %> </p>
+	</div>
+
+	<div>
+
+		<%= submit_tag "Sign In"%> <br />
+	</div>
+
+
+
+	<% end %>

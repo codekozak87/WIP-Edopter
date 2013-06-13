@@ -1,18 +1,36 @@
-<h1>User #<%= @user.id %></h1>
+<h1> <%= @user.username %>'s profile </h1>
 
+<div>
+<p class="nav nav-pills pull-right">
+<%= link_to "Fine Tune", edit_user_url(@user), class: "btn btn-warning"  %>
+</p>
+</div>
  <div>
-    <%= hidden_field_tag @username %>
+      <ul class="nav nav-pills pull-right">        
+      
+      <li><%= link_to "Edopters", users_url %> </li> 
+       
+       
+      <li><%= link_to "Startups", companies_url %> </li> 
+        
+      </ul>
+
   </div>
+
+ <div class="container span5 offset4 profile_name">
+      <h3>Contact</h3>
+      <p><a href="#">Email Address</a></p>
+      <p><a href="#">Social Media Link</a></p>
+      <h3>Interests/Likes</h3>
+      <p>Interest/Like 1</p>
+      <p>Interest/Like 2</p>
+      <p>Interest/Like 3</p>
+    </div>
 
 <p>
   <b>Name:</b>
   <%= @user.name %>
-</p>
-
-<p>
-  <b>Email:</b>
-  <%= @user.email %>
-</p>
+</p>  
 
 <p>
   <b>About Me</b>

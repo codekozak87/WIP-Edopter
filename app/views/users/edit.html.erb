@@ -1,4 +1,4 @@
-<h1>Editing User #<%= @user.id %></h1>
+<h1>Editing <%= @user.name %>'s Profile</h1>
 
 
 <%= form_tag(user_url(@user), method: 'put') do %>
@@ -8,14 +8,26 @@
     <%= text_field_tag :username, @user.username %>
   </div>
 
-  <div>
-    <%= label_tag :password %><br />
-    <%= text_field_tag :password, @user.password %>
+<div class="nav nav-pills pull-middle">
+    <%= label_tag :name %><br />
+    <%= text_field_tag :name, @user.name %>
   </div>
 
-  
+  <div>
+    <%= label_tag :interests %><br />
+    <%= text_field_tag :interests, @user.interests %>
+  </div>
+
+   <div>
+    <%= label_tag :about_me %><br />
+    <%= text_area_tag :about_me, @user.about_me %>
+  </div>
+
   <div>
     <%= submit_tag "Update User" %>
   </div>
 
+
+
 <% end %>
+x
