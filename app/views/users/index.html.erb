@@ -6,7 +6,9 @@
   <thead>
     <tr>
       <th>Edopters</th>
+      <th>Name</th>
       <th>Interests</th>
+      <th>About Me</th>
       <th></th>
       <th></th>
       <th></th>
@@ -17,9 +19,9 @@
   <% @users.each do |user| %>
     <tr>
       <td><%= user.username %></td>
+      <td><%= user.name %></td>
       <td><%= user.interests %></td>
-      <td><%= user.interests %></td>
-      <td><%= user.interests %></td>
+      <td><%= user.about_me %></td>
   
       <td><%= link_to 'Show', user_url(user) %></td>
       <td><%= link_to 'Edit', edit_user_url(user) %></td>

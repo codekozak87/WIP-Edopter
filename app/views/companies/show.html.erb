@@ -1,4 +1,4 @@
-<h1>#<%= @company.name %></h1>
+<h1><%= @company.company_name %></h1>
 
 <p>
   <b>Company name:</b>
@@ -6,19 +6,33 @@
 </p>
 
 <p>
+  <b>Company Website:</b>
+  <%= @company.company_website %>
+</p>
+
+
+<div class="container span5 offset4">
+			<h3>Contact</h3>
+<p>
   <b>Company email:</b>
   <%= @company.company_email %>
 </p>
 
 <p>
-  <b>User:</b>
-  <%= @company.user_id %>
+  <b>Social URLs:</b>
+  <%= @company.social_url %>
 </p>
 
 <p>
-  <b>Event:</b>
-  <%= @company.event_id %>
+  <b>Industry:</b>
+  <%= @company.bread_and_butter %>
+</p><p>
+
+
+  <b>Product(s)</b>
+  <%= @company.product %>
 </p>
+
 
 <head>
 		<meta charset="UTF-8">
@@ -46,8 +60,7 @@
 			</p>
 		</div>
 		
-		<div class="container span5 offset4">
-			<h3>Contact</h3>
+	
 			<p class=><a href="#">Email Address</a></p>
 			<p><a href="#">Social media link</a></p>
 			<h3>About the Startup</h3>

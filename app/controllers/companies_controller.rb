@@ -21,7 +21,7 @@ class CompaniesController < ApplicationController
  
 
    if @company.save
-      redirect_to company_url, :notice => "Startup Account Creation Success!"
+      redirect_to company_url(@company), :notice => "Startup Account Creation Success!"
     else
       redirect_to new_user_url, :notice => "Try again."
     end

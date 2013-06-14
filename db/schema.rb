@@ -11,17 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130611073104) do
+ActiveRecord::Schema.define(:version => 20130614042657) do
 
   create_table "companies", :force => true do |t|
     t.string  "company_name"
     t.string  "company_email"
     t.integer "user_id"
-    t.integer "event_id"
     t.string  "website"
     t.string  "bread_and_butter"
     t.string  "social_url"
     t.string  "product"
+    t.text    "about_us"
   end
 
   create_table "events", :force => true do |t|

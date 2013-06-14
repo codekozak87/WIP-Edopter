@@ -10,26 +10,21 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
-    @user.username = params[:username]
-    @user.password = params[:password]
-
-      if @user.save
-      redirect_to user_url, :notice => "Edopter Account Creation Success!"
-    else
-      redirect_to new_user_url, :notice => "Username taken."
-    end
-  end
+     end
 
 
   def create
     @user = User.new
     @user.username = params[:username]
     @user.password = params[:password]
+    @user.interests = params[:interests]
+    @user.about_me = params[:about_me]
+    @user.name = params[:name]
     
-    if @user.save
-            redirect_to users_url
-          else
-      render 'new'
+      if @user.save
+      redirect_to user_url(@user), :notice => "Edopter Account Creation Success!"
+    else
+      redirect_to new_user_url, :notice => "Username taken."
     end
   end
 
@@ -41,6 +36,9 @@ class UsersController < ApplicationController
     @user = User.find_by_id(params[:id])
     @user.username = params[:username]
     @user.password = params[:password]
+    @user.interests = params[:interests]
+    @user.about_me = params[:about_me]
+    @user.name = params[:name]
     
      if @user.save
       redirect_to users_url, :notice => "Updated successfully."

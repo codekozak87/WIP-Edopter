@@ -49,10 +49,6 @@ Edopter::Application.routes.draw do
 
   # Routes for the Company resource:
 
-
-
-
-
   # CREATE
   get '/companies/new', controller: 'companies', action: 'new', as: 'new_company'
   post '/companies', controller: 'companies', action: 'create'
